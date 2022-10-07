@@ -1,0 +1,30 @@
+<div class="container">
+    <legend>Editar Aluno</legend>
+    <form>
+        <div class="mb-3">
+            <label for="txtname" class="form-label">Nome</label>
+            <input 
+               type="text" 
+               class="form-control" 
+               id="txtName" 
+               aria-describedby="emailHelp"
+               name="alunoname"
+               [(ngModel)] = "formAluno.nome"            
+               />
+        </div>
+        <div class="mb-3">
+          <label for="txtquantity" class="form-label">turma</label>
+          <input 
+             type="text" 
+             class="form-control" 
+             id="txtquantity" 
+             aria-describedby="emailHelp"
+             name="quantity"
+             [(ngModel)] = "formAluno.turma" 
+              
+             />
+             </div>
+        
+        <button type="button" (click)="updateAluno()" class="btn btn-primary">Cadastrar</button>
+      </form>
+</div>

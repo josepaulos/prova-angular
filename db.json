@@ -1,0 +1,24 @@
+{
+  "alunos": [
+    {
+      "id": 1,
+      "nome": "Robertinho silva ",
+      "turma": "massagem"
+    },
+    {
+      "id": 2,
+      "nome": "Bertinho",
+      "turma": "massagem"
+    },
+    {
+      "id": 3,
+      "nome": "Buburack",
+      "turma": "massagem de Primeira"
+    },
+    {
+      "id": 4,
+      "nome": "Kurt",
+      "turma": "Piroquira"
+    }
+  ]
+}

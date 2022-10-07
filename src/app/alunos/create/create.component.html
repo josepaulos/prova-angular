@@ -1,0 +1,30 @@
+<div class="container">
+    <legend>Criar Aluno</legend>
+    <form>
+        <div class="mb-3">
+            <label for="txtname" class="form-label">Nome</label>
+            <input 
+               type="text" 
+               class="form-control" 
+               id="txtName" 
+               aria-describedby="emailHelp"
+               name="alunoname"
+               [(ngModel)] = "alunoForm.nome"            
+               />
+        </div>
+        <div class="mb-3">
+          <label for="txtquantity" class="form-label">turma</label>
+          <input 
+             type="text" 
+             class="form-control" 
+             id="txtquantity" 
+             aria-describedby="emailHelp"
+             name="quantity"
+             [(ngModel)] = "alunoForm.turma" 
+              
+             />
+             </div>
+        
+        <button type="button" (click)="createAluno()" class="btn btn-primary">Cadastrar</button>
+      </form>
+</div>

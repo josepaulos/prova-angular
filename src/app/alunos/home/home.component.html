@@ -1,0 +1,23 @@
+<a routerLink="/alunos/create" class="btn btn-primary">Criar Novo</a>
+<table class="table text-center">
+    <thead>
+        <tr>
+            <td>id</td>
+            <td>nome</td>
+            <td>turma</td>
+            <td colspan="2">opcoes</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let aluno of allAlunos">
+            <td>{{aluno.id}}</td>
+            <td>{{aluno.nome}}</td>
+            <td>{{aluno.turma}}</td>
+            <td>
+                <a routerLink='/alunos/edit/{{aluno.id}}' class="btn btn-success">Editar</a>
+                <a routerLink='/alunos/delete/{{aluno.id}}' class="btn btn-danger">Excluir</a>
+            </td>
+        </tr>
+    </tbody>
+
+</table>
